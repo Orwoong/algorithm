@@ -32,12 +32,14 @@ for i in range(N):
     else:
         print(-heapq.heappop(max_heap)[0], heapq.heappop(min_heap)[0])
 
+
+# import sys
+# from collections import deque
 # N = int(sys.stdin.readline())
-# deq = deque()
 #
 # for i in range(N):
 #     K = int(sys.stdin.readline())
-#
+#     deq = deque()
 #     for i in range(K):
 #         in_out, number = sys.stdin.readline().split()
 #         number = int(number)
@@ -45,7 +47,6 @@ for i in range(N):
 #         if not deq and in_out == 'I':
 #             deq.append(number)
 #             continue
-#
 #
 #         if in_out == 'I':
 #             if deq[-1] < number:
