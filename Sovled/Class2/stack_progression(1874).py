@@ -3,15 +3,15 @@ from collections import deque
 
 N = int(input())
 app_inputs = deque(int(sys.stdin.readline()) for _ in range(N))
-stack_count = 1
-stack = [1]
+stack_count = 0
+stack = []
 result = []
 
-while stack:
-    if not app_inputs:
-        break
+while app_inputs:
     input_first = app_inputs[0]
-    stack_last = stack[-1]
+    stack_last = 0
+    if stack:
+        stack_last = stack[-1]
 
     if input_first > stack_last:
         stack_count += 1
