@@ -1,0 +1,9 @@
+[project]
+name = "algorithm-agent-mcp"
+version = "1.0.0"
+description = "Algorithm problem solving agent for Claude Code"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+algorithm-agent-server = "algorithm_agent_server:main"
